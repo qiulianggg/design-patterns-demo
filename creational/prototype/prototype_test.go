@@ -18,6 +18,7 @@ func TestCloneIsDeepCopy(t *testing.T) {
 	if len(tpl.Tags) != 2 || tpl.Tags[0] != "a" {
 		t.Errorf("原型 Tags 被污染: %v", tpl.Tags)
 	}
+
 }
 
 // 克隆内容应与原型一致。
