@@ -14,6 +14,7 @@ func TestCloneIsDeepCopy(t *testing.T) {
 	if tpl.Title != "模板" {
 		t.Errorf("原型 Title 被污染: %q", tpl.Title)
 	}
+
 	if len(tpl.Tags) != 2 || tpl.Tags[0] != "a" {
 		t.Errorf("原型 Tags 被污染: %v", tpl.Tags)
 	}
